@@ -6,21 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FUN WITH GIFS</title>
     <!-- LINK TO CSS FILE -->
-    <link rel="text/css" href="stylesheet" src="assest/css/style.css"/>
-   
+    <link  src="assest/css/reset.css"/>
+    <link  src="assest/css/style.css"/>
 </head>
 <body>
 
+    <div class="container">
+        <h1>Animal Search</h1>
+    
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div id="buttons-view"></div>
+    
+        <form id="animal-form">
+          <label for="animal-input">Add Your Animal!</label>
+          <input type="text" id="animal-input">
+          <br>
+    
+          <!-- Button triggers new animals to be added -->
+          <input id="add-animal" type="submit" value="Add Your Animal!">
+        </form>
+    
+        <!-- animal-gifs are to be to go here -->
+      
 
-
-
+        <button data-animal="cat">Kitties</button>
+        <button data-animal="dog">Doggos</button>
+        <button data-animal="bird">Birds</button>
+        <button data-animal="lion">Lions</button>
+        <button data-animal="elephant">elephants</button>
+        <button data-animal="tiger">tigers</button>
+        <button data-animal="bear">BEars</button>
+        <button data-animal="rabbit">rabbits</button>
+        <button data-animal="dingo">dingos</button>
+        <div id="gifs-here">
+        </div>
 
 
 <!-- LINK TO JQUERY -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- LINK TO JAVASCRIPT FILE THAT CONTAINS ALL THE JQUERY CODE. -->   
-<script type="javascript/text" src="assest/javascript/script.js"></script>
+<script src="assest/javascript/script.js"></script>
 
 </body>
 </html>
